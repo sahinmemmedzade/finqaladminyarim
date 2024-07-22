@@ -1,0 +1,139 @@
+.article-container {
+    width: 60%;
+    margin: 100px auto 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .articleimg > img {
+    width: 100%;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .reaction-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .like-dislike {
+    display: flex;
+    align-items: center;
+  }
+  
+  .like, .dislike {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+  
+  .like span, .dislike span {
+    margin-left: 5px;
+  }
+  
+  .font-size-buttons {
+    margin-left: auto;
+  }
+  
+  .font-size-button {
+    background-color: transparent;
+    border: none;    
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .article-actions {
+    margin-top: 20px;
+  }
+  
+  .article-actions p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .social-button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .social-button.facebook {
+    color: #4267B2;
+  }
+  
+  .social-button.telegram {
+    color: #0088cc;
+  }
+  
+  .social-button.x {
+    color: #1DA1F2;
+  }
+  
+  .social-button.copy, .social-button.print {
+    color: #000;
+  }
+  
+  .article-url {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00A8E8;
+    text-decoration: none;
+  }
+  
+  .article-url:hover {
+    text-decoration: underline;
+  }
+  
+  .comments-section {
+    margin-top: 20px;
+  }
+  
+  .comments-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .comments-section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .comments-section input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .article-container {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .article-container {
+      width: 90%;
+    }
+  }
+  

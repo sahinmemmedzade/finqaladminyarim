@@ -1,0 +1,358 @@
+.carousel-container {
+    width: 57%;
+    min-height:70vh;
+    background-color: red;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 120px;
+    left: 30px;
+  }
+  
+  .carousel-slide {
+    position: relative;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: -40px;
+    
+    right: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .carousel-caption .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carousel-caption .icon-buttons {
+    display: flex;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .carousel-caption .icon-button {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    transition: background-color 0.7s, color 0.7s; /* Tam transition xüsusiyyətini təyin et */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+ .carousel-caption .icon-button:hover{
+    background-color:rgba(0, 0, 0, 0.8) ;
+color: white; 
+}
+  
+  .carousel-caption .icon-button svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .carousel-caption .info .category {
+    background: green;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  
+  .carousel-caption .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .carousel-caption .info .date,
+  .carousel-caption .info .views {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    border-radius: 3px;
+    color: white;
+  }
+  .dateandviews{
+    gap: 10px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  }
+  .carousel-caption .update {
+    width: 10%;
+    height: 30px;
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+font-size: 16px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .carousel-caption .title {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: color 0.7s;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  .carousel-caption .title:hover{
+    color: red;
+    cursor: pointer;
+  }
+  /* Dot styles */
+  .carousel-dots {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .carousel-dot {
+    width: 30px;  /* Width of the rectangle */
+    height: 10px; /* Height of the rectangle */
+    background-color: white;
+    border-radius: 3px; /* Optional: rounded corners for the rectangle */
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-dot.active {
+    background-color: green;
+  }
+  @media screen and (max-width:2000px) {
+    .carousel-container{
+      min-height: 75vh;
+    }
+  }
+  
+  @media screen and (max-width:1800px) {
+    .carousel-container{
+      min-height: 57vh;
+    }
+  }
+  @media screen and (max-width:1700px) {
+    .carousel-container{
+      min-height: 54vh;
+    }
+  }
+  @media screen and (max-width:1700px) {
+    .carousel-container{
+      min-height: 53vh;
+    }
+  }
+  @media screen and (max-width:1600px) {
+    .carousel-container{
+      min-height: 51vh;
+    }
+  }
+  @media screen and (max-width:1600px) {
+    .carousel-container{
+      min-height: 49vh;
+    }
+  }
+  @media screen and (max-width:1400px) {
+    .carousel-container{
+      min-height: 47vh;
+    }
+  }
+  @media screen and (max-width:1200px) {
+    .carousel-container{
+      min-height: 47vh;
+    }
+  }
+  @media screen and (max-width:1400px) {
+   /* .carousel-container{
+    margin-top: 110px;
+   }  */
+  }
+  @media screen and (max-width:1300px) {
+ .carousel-container{
+margin-top: 100px;
+}
+  }
+  @media screen and (max-width:1000px) {
+  
+  }
+  @media screen and (max-width:1100px) {
+    .scrolling-list{
+      max-height:45vh ;
+    }
+   
+   .details{
+    height: 20px;
+   }
+    .icon-button{
+        height:25px ;
+        width: 25px;
+    }
+    .carousel-caption .update{
+        height: 15px;
+    }
+    .dateandviews{
+        height: 15px;
+    }
+    
+  }
+  @media screen and (max-width:800px) {
+    .carousel-caption{
+      bottom: -50px;
+    }
+    .carousel-dots{
+      bottom: -50px;
+    }
+   }
+   @media screen and (max-width:700px) {
+    
+  
+ 
+   }
+   @media screen and (max-width:600px) {
+    .carousel-caption{
+bottom: -70px;
+    }
+    .carousel-dots{
+      bottom: -60px;
+    }
+    .carousel-caption .title{
+font-size: 14px;
+    }
+    .carousel-caption .info .date,
+    .carousel-caption .info .views{
+  font-size: 10px;
+}
+
+.carousel-caption .update{
+  font-size: 10px;
+}
+.carousel-caption .icon-button{
+  height:18px ;
+  width: 18px;
+margin-top: 5%;
+
+}
+.carousel-dots{
+  bottom: -70px;
+}
+.carousel-caption .icon-button>svg{
+width: 14px;
+height: 14px;
+}
+.carousel-dot{
+  width: 14px;
+  height: 8px;
+}
+   }
+   @media screen and (max-width:500px) {
+    .carousel-caption{
+      height: 110px;
+    }
+     .carousel-caption .title{
+      font-size: 10px;
+   }
+  /* .carousel-caption .info .date,
+.carousel-caption .info .views{
+      font-size: 5px;
+   }
+   .carousel-caption .update{
+      font-size: 5px;
+   }
+    .carousel-caption .icon-buttons{
+      top: 75%;
+    }
+    .carousel-container{
+      left: 50px;
+    } */
+   }
+   @media screen and (max-width:400px) {
+    .carousel-caption .title{
+      font-size: 8px;
+   }
+   .carousel-caption .info .date,
+.carousel-caption .info .views{
+      font-size: 7px;
+   }
+   .carousel-caption .update{
+      font-size: 7px;
+   }
+   .carousel-dots{
+    bottom: -7px;
+   }
+    /* .carousel-caption .icon-buttons{
+      top: 75%;
+    }
+    .carousel-container{
+      left: 45px;
+    }
+    .carousel-caption{
+     height: 55px;
+    }
+    .details{
+     height: 10px;
+    }
+    .carousel-caption .icon-button{
+         height:10px ;
+         width: 10px;
+
+     } */
+     /* .carousel-caption .icon-button>svg{
+width: 8px;
+height: 8px;
+    }
+    .carousel-caption .icon-buttons{
+        top: 75%;
+
+    } */
+    
+     /* .carousel-caption .update{
+         height: 7px;
+     } */
+     /* .dateandviews{
+         height: 7px;
+     } */
+     /* .carousel-caption .title{
+        font-size: 8px;
+        margin-bottom: 6px;
+     }
+      */
+     /* .carousel-dot{
+        width: 14px;
+    height: 6px; 
+    } */
+   }

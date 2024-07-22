@@ -1,0 +1,8 @@
+.main{
+display: flex;
+background-color: aqua;
+align-items: center;
+justify-content: center;
+gap: 0;
+
+}
